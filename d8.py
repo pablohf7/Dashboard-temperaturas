@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objs as go
 
 st.set_page_config(layout="wide", page_title="Dashboard de Temperaturas", initial_sidebar_state="expanded")
-st.title("📊 Dashboard Interactivo de Temperaturas por Estación de Bombeo del 01-01-25 al 06-01-25")
+st.title("📊 Dashboard Interactivo de Temperaturas por Estación de Bombeo 01-01-25 al 06-01-25")
 st.markdown("<h3 style='text-align: center;'>Elaborado por Departamento de Confiabilidad de Cecuamaq, C.A.</h3>", unsafe_allow_html=True)
 # Clasifica archivos según su nombre
 def clasificar_archivos(archivos):
@@ -91,6 +91,7 @@ if archivos:
                 with col3: st.plotly_chart(fig, use_container_width=True)
 else:
     st.info("Carga archivos CSV para visualizar los gráficos.")
+
 
 
 
